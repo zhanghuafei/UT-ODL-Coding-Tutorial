@@ -186,3 +186,23 @@ ng for non-exhaustive switches.
 
 因此，静态代码分析工具仅起辅助作用，通过了解提示背后的原因，不难判断出“假阳性”告警。相信借助该类辅助工具，能帮助提高对代码质量的认知，从源头上杜绝坏代码。
 
+# 命名风格补充
+## Maven artifact names
+GroupId：com.utstar.项目名
+ArtifactId：模块名，若名字包含多个单词，应用“-”分隔。
+
+## Yang文件命名风格
+Yang内元素的命名包含两种风格：
+- 驼峰式
+- 统一小写，单词之间可用“-”分隔。
+
+倾向于使用第二种方式，但也应考虑项目内保持统一风格。
+
+## Package Names
+1. 包名使用前缀“com.utstar.项目名.组件名”。
+2. 组件对外提供的接口应单独成包（package）
+3. 包名统一使用小写，点分隔符之间有且仅有一个自然语义的英语单词。包名统一使用单数形式，但是类名如果有复数含义，类名可以使用复数形式。（ali-java-style）
+4. 杜绝完全不规范的缩写，避免望文不知义。（ali-java-style）
+5. Last segment of the package name (after component name) is used to distinguish public and private parts of the component. Public interfaces must be placed in a separate packages. In that case the implementation should be placed in a separate package as well. E.g. org.opendaylight.yang.service package contains public service definition, org.opendaylight.yang.service.impl contains service implementation, org.opendaylight.yang.service.mock contains mock implementation of the service. Recommended values are provided in the following table: 
+
+![](images/image014.jpg)
