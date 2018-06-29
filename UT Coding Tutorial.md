@@ -12,7 +12,14 @@
     * [(九) Git换行符设置](#git换行符设置)
 * [Commit Message](#commit-message)
 * [静态代码分析工具](#静态代码分析工具)
+        * [FindBugs](#findbugs)
+        * [Error-Prone](#error-prone)  
+        * [PMD-CPD（Copy/Paste Detection）](#pmd-cpdcopypaste-detection)
+        * [总结](#总结)        
 * [命名风格补充](#命名风格补充)
+        * [Maven artifact names](#maven-artifact-names)
+        * [Yang文件命名风格](#yang文件命名风格)
+        * [Package Names](#package-names)  
 * [POM依赖配置](#pom依赖配置)
 
 # Code Style
@@ -205,6 +212,7 @@ ng for non-exhaustive switches.
 # 命名风格补充
 ## Maven artifact names
 GroupId：com.utstar.项目名
+
 ArtifactId：模块名，若名字包含多个单词，应用“-”分隔。
 
 ## YANG文件命名风格
