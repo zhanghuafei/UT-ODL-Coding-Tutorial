@@ -116,3 +116,7 @@ Commit Message作为commit的历史记录，能有效帮助协作的开发人员
 ![](images/image011.png)
 
 解决BUG的commit应参照该格式
+
+要了解更多关于commit message的消息可以查看：
+- [OpenStack commit message recommendations](https://wiki.openstack.org/wiki/GitCommitMessages)
+- [Angular规范](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
