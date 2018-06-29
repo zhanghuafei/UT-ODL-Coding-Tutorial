@@ -186,7 +186,9 @@ Cons:
   * FindBugs has a greater breadth of checks
   * current error-prone releases only work with Java 8(通过参数配置可支持>=6)
 ```
-ODL的infrautils项目提供了一个已配置好error-prone的parent pom（org.opendaylight.infrautils:parent）供项目继承，但目前我们的实现模块都统一继承了config-parent，config-parent在继承体系上并未包含org.opendaylight.infrautils:parent，所以尚无法通过简单地添加依赖的方式加以应用。
+ODL的infrautils项目提供了一个已配置好error-prone的parent pom（org.opendaylight.infrautils:parent）供项目继承，但目前我们的实现模块都统一继承了config-parent，config-parent在继承体系上并未包含org.opendaylight.infrautils:parent。
+
+使用方式待补充
 
 要了解更多关于error-prone的消息可以查看： 
 - [errorprone](http://errorprone.info/)
