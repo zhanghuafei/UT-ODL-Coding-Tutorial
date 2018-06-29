@@ -30,7 +30,7 @@
 
 
 ------------------------------------------------------------------------------------------
-本文档是在ODL的Coding Guidelines基础上，结合本部门的需求，整理而成。要了解更详细的信息，应自行阅读：
+本文档是在ODL的Coding Guidelines基础上，结合本部门的需求，整理而成。要了解更详细的信息，应查看
 [Coding_Guideline](https://wiki.opendaylight.org/view/BestPractices/Coding_Guideline)
 
 # Code Style
@@ -56,7 +56,9 @@ Eclipse提供快速格式化功能，并支持格式profile的灵活配置。为
 
 ![](images/image002.png)
 
-Formatter包含两种使用方式，一是对选中代码的码的格式化，使用快捷键Ctrl+Shift+F完成。二是对整个项目的格式化（待补充）。
+Formatter包含两种使用方式：
+1. 对选中代码的码的格式化，使用快捷键Ctrl+Shift+F完成。
+2. 对整个项目的格式化（待补充）。
 
 ## CheckStyle
 ### Step 1- Install Check-Style Plugin
