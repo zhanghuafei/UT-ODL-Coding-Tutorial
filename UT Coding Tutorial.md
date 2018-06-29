@@ -1,6 +1,21 @@
-* [1. Code Style](#yang文件命名风格)
+# UT Coding Tutorial.md
+* [Code Style](#code-style)
+* [Environment](#environment)
+    * [(一) Eclipse初始配置](eclipse初始配置)
+    * [(二) 字符编码](#字符编码)
+    * [(三) Formatter](#formatter)
+    * [(四) CheckStyle](#checkstyle)
+    * [(五) 添加版权声明](#添加版权声明)
+    * [(六) Organize Imports](#organize-imports)
+    * [(七) Save Actions (Optional)](#save-actions-optional)
+    * [(八) 代码自动提示功能](#代码自动提示功能)
+    * [(九) Git换行符设置](#git换行符设置)
+* [Commit Message](#commit-message)
+* [静态代码分析工具](#静态代码分析工具)
+* [命名风格补充](#命名风格补充)
+* [POM依赖配置](#pom依赖配置)
 
-# 1. Code Style
+# Code Style
 
 ODL代码将[Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)作为主要的代码规范，其中，Column limit：100调整为120。（见4.4节）    
 
@@ -75,7 +90,7 @@ Help-> Install New Software
 
 ![](images/image009.jpg)
 
-## 2.8.	代码自动提示功能
+## 代码自动提示功能
 
 ![](images/image010.jpg)
 
@@ -192,7 +207,7 @@ ng for non-exhaustive switches.
 GroupId：com.utstar.项目名
 ArtifactId：模块名，若名字包含多个单词，应用“-”分隔。
 
-## Yang文件命名风格
+## YANG文件命名风格
 Yang内元素的命名包含两种风格：
 - 驼峰式
 - 统一小写，单词之间可用“-”分隔。
@@ -208,7 +223,7 @@ Yang内元素的命名包含两种风格：
 
 ![](images/image014.jpg)
 
-# 8. POM依赖配置
+# POM依赖配置
 依赖的配置应遵循按需原则。可在CMD界面下使用命令mvn dependency:analyze辅助分析依赖情况。
 ![](images/image016.jpg)
 
