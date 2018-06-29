@@ -1,5 +1,5 @@
 
-## Code Style
+# Code Style
 
 ODL代码将[google-code-style](http://google.github.io/styleguide/javaguide.html)作为主要的代码规范，其中，Column limit：100调整为120。（见4.4节）    
 
@@ -7,6 +7,9 @@ ODL代码将[google-code-style](http://google.github.io/styleguide/javaguide.htm
 
 若google-code-style和alibaba-java-style-guide发生冲突，则以google-code-style为准。
 
+#Environment
+## Eclipse初始配置
+[GettingStarted:_Eclipse](https://wiki.opendaylight.org/view/GettingStarted:_Eclipse)
 ## 字符编码			
 为统一团队开发环境，编码格式应设置为UTF-8，换行符统一为LF。
 
@@ -68,5 +71,10 @@ Help-> Install New Software
 
 ## Save Actions (Optional)
 该设置可在保存文件时触发图中指定的动作，因勾选该项将导致保存文件速度过慢，所以请按需设置。
+
 ![](images/image009.jpg)
+
+## 2.8.	代码自动提示功能
+
+![](images/image010.jpg)
 
