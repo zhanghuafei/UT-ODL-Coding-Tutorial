@@ -7,7 +7,7 @@ ODL代码将[google-code-style](http://google.github.io/styleguide/javaguide.htm
 
 若google-code-style和alibaba-java-style-guide发生冲突，则以google-code-style为准。
 
-#Environment
+# Environment
 ## Eclipse初始配置
 [GettingStarted:_Eclipse](https://wiki.opendaylight.org/view/GettingStarted:_Eclipse)
 ## 字符编码			
@@ -87,4 +87,32 @@ Git库对于文本的默认换行符为LF，Windows则默认为CRLF。
     
 通过该配置，在commit时，将自动将文本文件的CRLF转换为LF。
 
+# Commit Message
+Commit Message作为commit的历史记录，能有效帮助协作的开发人员识别每个commit的作用、目的。因此提交到远端仓库的Commit Message应遵循如下要求： 
+- Provide a brief description of the change in the first line.
+- Insert a single blank line after the first line.
+- Provide a detailed description of the change in the following lines, breaking paragraphs where needed.
+- The first line should be limited to 50 characters and should not end with a period.
 
+下面提供两个个例子供参考：
+
+例子1:
+```
+  Switch libvirt get_cpu_info method over to use config APIs
+
+    The get_cpu_info method in the libvirt driver currently uses
+    XPath queries to extract information from the capabilities
+    XML document. Switch this over to use the new config class
+    LibvirtConfigCaps. Also provide a test case to validate
+    the data being returned.
+
+    DocImpact // 代表需要增加关于该change的文档，触发生成文档项目的一个issue（Optional）
+    Closes-Bug: #1003373  // 关闭某BUG
+    Implements: blueprint libvirt-xml-cpu-model // 指向相关的蓝图规划（Optional）
+    Change-Id: I4946a16d27f712ae2adf8441ce78e6c0bb0bb657
+```
+例子2：
+
+![](images/image011.png)
+
+解决BUG的commit应参照该格式
