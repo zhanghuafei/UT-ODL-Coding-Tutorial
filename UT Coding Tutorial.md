@@ -206,3 +206,10 @@ Yang内元素的命名包含两种风格：
 5. Last segment of the package name (after component name) is used to distinguish public and private parts of the component. Public interfaces must be placed in a separate packages. In that case the implementation should be placed in a separate package as well. E.g. org.opendaylight.yang.service package contains public service definition, org.opendaylight.yang.service.impl contains service implementation, org.opendaylight.yang.service.mock contains mock implementation of the service. Recommended values are provided in the following table: 
 
 ![](images/image014.jpg)
+
+# POM依赖配置
+依赖的配置应遵循按需原则。可在CMD界面下使用命令mvn dependency:analyze辅助分析依赖情况。
+![](images/image016.jpg)
+
+
+
