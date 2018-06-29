@@ -21,12 +21,12 @@
     * [Yang文件命名风格](#yang文件命名风格)
     * [Package Names](#package-names)  
 * [POM依赖配置](#pom依赖配置)
+* Gerrit(待补充)
+* Jenkins（待补充）
 
 
 
-
-
-    
+------------------------------------------------------------------------------------------
 本文档是在ODL的Coding Guidelines基础上，结合本部门的需求，整理而成。要了解更详细的信息，应自行阅读：
 [Coding_Guideline](https://wiki.opendaylight.org/view/BestPractices/Coding_Guideline)
 
@@ -244,4 +244,5 @@ Yang内元素的命名包含两种风格：
 ![](images/image016.jpg)
 
 
+-----------------------------------------------------------------------
 
