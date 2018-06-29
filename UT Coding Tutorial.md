@@ -45,3 +45,19 @@ Help-> Install New Software
 
 ### Step 4 - Make Sure whether ChecStyle take effect
 ![](images/image006.png)
+
+## 添加版权声明
+
+通过如图的设置，可在新建文件时，自动将如下版权声明添加到文件中：
+```
+/*
+ * Copyright (c) 2018 UTStarcom, Inc. and others. All rights reserved.
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License v1.0 which accompanies this distribution,
+ * and is available at http://www.eclipse.org/legal/epl-v10.html
+ */
+```
+
+![](images/image007.png)
+
