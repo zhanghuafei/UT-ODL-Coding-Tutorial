@@ -61,3 +61,9 @@ Help-> Install New Software
 
 ![](images/image007.png)
 
+## Organize Imports
+去掉Eclipse所有预置的import order。
+
+![](images/image008.png)
+
+
