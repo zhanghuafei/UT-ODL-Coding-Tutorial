@@ -1,5 +1,6 @@
+* [1. Code Style](#1)
 
-# Code Style
+# 1. Code Style
 
 ODL代码将[Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)作为主要的代码规范，其中，Column limit：100调整为120。（见4.4节）    
 
