@@ -1,4 +1,4 @@
-* [1. Code Style](#8)
+* [1. Code Style](#yang文件命名风格)
 
 # 1. Code Style
 
