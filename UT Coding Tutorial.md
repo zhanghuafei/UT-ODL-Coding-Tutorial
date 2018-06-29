@@ -1,4 +1,4 @@
-* [1. Code Style](#1)
+* [1. Code Style](#8)
 
 # 1. Code Style
 
@@ -208,7 +208,7 @@ Yang内元素的命名包含两种风格：
 
 ![](images/image014.jpg)
 
-# POM依赖配置
+# 8. POM依赖配置
 依赖的配置应遵循按需原则。可在CMD界面下使用命令mvn dependency:analyze辅助分析依赖情况。
 ![](images/image016.jpg)
 
