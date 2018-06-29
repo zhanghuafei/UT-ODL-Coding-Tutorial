@@ -66,4 +66,7 @@ Help-> Install New Software
 
 ![](images/image008.jpg)
 
+## Save Actions (Optional)
+该设置可在保存文件时触发图中指定的动作，因勾选该项将导致保存文件速度过慢，所以请按需设置。
+![](images/image009.jpg)
 
