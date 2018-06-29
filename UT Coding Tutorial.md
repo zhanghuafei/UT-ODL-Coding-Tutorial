@@ -120,3 +120,69 @@ Commit Message作为commit的历史记录，能有效帮助协作的开发人员
 要了解更多关于commit message的消息可以查看：
 - [OpenStack commit message recommendations](https://wiki.openstack.org/wiki/GitCommitMessages)
 - [Angular规范](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
+
+# 静态代码分析工具
+静态代码分析工具可帮助开发人员在不运行代码的情况下分析标识代码错误并提供修改建议，实践上一般能有效的检测出一些低级错误、不好的代码实践（bad practise）。下面就ODL建议的几款开源的静态代码分析工具进行简单介绍：
+## FindBugs
+在ODL config-parent的plugin-management中已对FindBugs插件作了相关配置。在需分析代码的模块中添加如下配置即可使FindBugs在build过程中生效。
+```
+   <plugins>
+     <plugin>
+       <groupId>org.codehaus.mojo</groupId>
+       <artifactId>findbugs-maven-plugin</artifactId>
+       <configuration>
+         <failOnError>true</failOnError>
+       </configuration>
+     </plugin>
+   </plugins>
+```
+FindBugs的分析结果可在项目目录使用图形化界面查看.
+```
+mvn findbugs:gui
+```
+
+![](images/image012.jpg)
+
+## Error-Prone
+Error-Prone是由Google出品的一款静态代码分析工具。与FindBus比较：
+```
+Pros:
+  * has faster cycle times and integrates into compilation workflow
+  * emits fewer false positives
+  * active maintainers fix issues
+  * releases several times per year
+Cons:
+  * FindBugs has a greater breadth of checks
+  * current error-prone releases only work with Java 8(通过参数配置可支持>=6)
+```
+ODL的infrautils项目提供了一个已配置好error-prone的parent pom（org.opendaylight.infrautils:parent）供项目继承，但目前我们的实现模块都统一继承了config-parent，config-parent在继承体系上并未包含org.opendaylight.infrautils:parent，所以尚无法通过简单地添加依赖的方式加以应用。
+
+要了解更多关于error-prone的消息可以查看： 
+- [errorprone](http://errorprone.info/)
+
+## PMD-CPD（Copy/Paste Detection）
+PMD同样是一款静态代码分析工具。特别的是，PMD内还包含一款CPD工具，CPD帮助检测重复代码。需要注意的是，代码重复检测基于文本分析，若代码之间仅涉及微小的差异，如差异仅在处理不同的类型（type）,则可能引发“假阳性”告警。这种情况可在代码中使用相应注解消除。
+```
+  @SuppressWarnings("CPD-START") 
+  ...
+  @SuppressWarnings("CPD-END")
+```
+ ODL应用Build过程已默认开启了CPD工具，build过程在target/site/中生成cpd.html报告。Maven的输出日志中也可以查看到相应的报告信息。
+ 
+要了解更多关于error-prone的消息可以查看：
+- [pmd](https://pmd.github.io/)
+
+## 总结
+任何一款静态代码分析工具都可能出现“假阳性”的警告。如下代码所示，checkstyle提示缺少default case：
+
+![](images/image013.jpg)
+
+但若按checkstyle提示添加default case，ErrorProne则提示如下错误：
+```
+[ERROR] D:\git repo\messagebus-mp\src\main\java\com\utstar\mp\messagebus\impl\DeviceNotificationAggragator.java:[115,17] [UnnecessaryDefaultInEnumSwitch] Switch handles all enum values; an explicit default case is unnecessary and defeats error checki
+ng for non-exhaustive switches.
+[ERROR] (see http://errorprone.info/bugpattern/UnnecessaryDefaultInEnumSwitch)
+```
+
+因此，静态代码分析工具仅起辅助作用，通过了解提示背后的原因，不难判断出“假阳性”告警。相信借助该类辅助工具，能帮助提高对代码质量的认知，从源头上杜绝坏代码。
+
