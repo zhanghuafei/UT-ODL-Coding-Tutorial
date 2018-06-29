@@ -10,4 +10,6 @@ ODL代码将[google-code-style](http://google.github.io/styleguide/javaguide.htm
 ## 字符编码			
 为统一团队开发环境，编码格式应设置为UTF-8，换行符统一为LF。
 
-注意此处设置仅对新建文件生效。
+注意此处的设置仅对新建文件生效。
+
+![](images/image001.jpg)
