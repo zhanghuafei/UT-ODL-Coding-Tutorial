@@ -78,3 +78,13 @@ Help-> Install New Software
 
 ![](images/image010.jpg)
 
+## GIT换行符设置
+
+Git库对于文本的默认换行符为LF，Windows则默认为CRLF。
+考虑跨平台开发的可能性以及checkstyle的check规则，要求工作空间的源码文件同样为LF。
+
+    git config --global core.autocrlf input
+    
+通过该配置，在commit时，将自动将文本文件的CRLF转换为LF。
+
+
