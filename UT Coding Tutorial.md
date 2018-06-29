@@ -1,7 +1,7 @@
 # UT Coding Tutorial
 * [Code Style](#code-style)
 * [Environment](#environment)
-    * [(一) Eclipse初始配置](eclipse初始配置)
+    * [(一) Eclipse初始配置](#eclipse初始配置)
     * [(二) 字符编码](#字符编码)
     * [(三) Formatter](#formatter)
     * [(四) CheckStyle](#checkstyle)
