@@ -20,3 +20,28 @@ Eclipse提供快速格式化功能，并支持格式profile的灵活配置。为
 ![](images/image002.png)
 
 Formatter包含两种使用方式，一是对选中代码的码的格式化，使用快捷键Ctrl+Shift+F完成。二是对整个项目的格式化（待补充）。
+
+## CheckStyle
+### Step 1- Install Check-Style Plugin
+- 方法1：通过Eclipse市场安装    
+进入菜单Help -> Eclipse Market Place -> Search  
+    搜索checkstyle
+- 方法2：    
+Help-> Install New Software  
+    CheckStyle插件地址：http://eclipse-cs.sourceforge.net/update  
+    安装完成后，根据提示重启eclipse即安装完成。
+
+### Step 2- Check Configuration
+按图导入如下三个check configuration文件并设为默认配置：
+- [odl_checks.xml](https://github.com/zhanghuafei/ODL-Coding-Guidelines/blob/master/check-style/odl_checks.xml)
+- [checkstyle-suppressions.xml](https://github.com/zhanghuafei/ODL-Coding-Guidelines/blob/master/check-style/checkstyle-suppressions.xml)
+- [EPL-LICENSE.regexp.txt](https://github.com/zhanghuafei/ODL-Coding-Guidelines/blob/master/check-style/EPL-LICENSE.regexp.txt)
+
+进入菜单Windows -> Preferences -> Check Style
+![](images/image004.png)
+
+### Step 3- Activate checkstyle
+![](images/image005.jpg)
+
+### Step 4 - Make Sure whether ChecStyle take effect
+![](images/image006.png)
