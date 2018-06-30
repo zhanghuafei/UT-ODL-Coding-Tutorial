@@ -194,7 +194,7 @@ Cons:
 ```
 ODL的infrautils项目提供了一个已配置好error-prone的parent pom（org.opendaylight.infrautils:parent）供项目继承，但目前我们的实现模块都统一继承了config-parent，config-parent在继承体系上并未包含org.opendaylight.infrautils:parent。
 
-使用方式待补充
+要使error-prone在build过程中生效， 应在相应项目的pom中添加profile [errorprone-unless-ide](https://github.com/opendaylight/infrautils/blob/master/common/parent/pom.xml)：
 
 要了解更多关于error-prone的消息可以查看： 
 - [Error-Prone](http://errorprone.info/)
