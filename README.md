@@ -38,9 +38,9 @@
 
 ODL代码将[Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)作为主要的代码规范，其中，Column limit：100调整为120。（见4.4节）    
 
-额外的，可参考阿里的[阿里巴巴Java开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf)，该文档涉及更广泛的主题。
+另外可参考[阿里巴巴Java开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf)，该文档涉及更广泛的主题。
 
-若[Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)和[阿里巴巴Java开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf)发生冲突，则以google-code-style为准。
+若[Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)和[阿里巴巴Java开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf)发生冲突，则以[Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)为准。
 
 # Environment
 ## Eclipse初始配置
@@ -215,6 +215,8 @@ PMD同样是一款静态代码分析工具。特别的是，PMD内还包含一�
 阿里巴巴集团提供的工具，基于PMD及相应IDE实现[阿里巴巴Java开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf)中部分规则（目前为53条）检测。
 
 工具包含中文提示，对于中文语言使用者相对友好。
+
+
 
 安装对应的[Eclipse插件](https://github.com/alibaba/p3c/tree/master/eclipse-plugin)即可使用，安装方式十分方便。具体使用方式详见[教程](https://github.com/alibaba/p3c/blob/master/eclipse-plugin/README_cn.md)。
 
