@@ -15,6 +15,7 @@
     * [FindBugs](#findbugs)
     * [Error-Prone](#error-prone)  
     * [PMD-CPD（Copy/Paste Detection）](#pmd-cpdcopypaste-detection)
+    * [Alibaba-P3C](#alibaba-p3c)
     * [总结](#总结)        
 * [命名风格补充](#命名风格补充)
     * [Maven artifact names](#maven-artifact-names)
@@ -37,9 +38,9 @@
 
 ODL代码将[Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)作为主要的代码规范，其中，Column limit：100调整为120。（见4.4节）    
 
-额外的，可参考阿里的[alibaba-java-style-guide](https://yq.aliyun.com/download/2719)，该文档涉及更广泛的主题。
+额外的，可参考阿里的[阿里巴巴Java开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf)，该文档涉及更广泛的主题。
 
-若[Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)和[alibaba-java-style-guide](https://yq.aliyun.com/download/2719)发生冲突，则以google-code-style为准。
+若[Google Java Style Guide](http://google.github.io/styleguide/javaguide.html)和[阿里巴巴Java开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf)发生冲突，则以google-code-style为准。
 
 # Environment
 ## Eclipse初始配置
@@ -196,7 +197,7 @@ ODL的infrautils项目提供了一个已配置好error-prone的parent pom（org.
 使用方式待补充
 
 要了解更多关于error-prone的消息可以查看： 
-- [errorprone](http://errorprone.info/)
+- [Error-Prone](http://errorprone.info/)
 
 ## PMD-CPD（Copy/Paste Detection）
 PMD同样是一款静态代码分析工具。特别的是，PMD内还包含一款CPD工具，CPD帮助检测重复代码。需要注意的是，代码重复检测基于文本分析，若代码之间仅涉及微小的差异，如差异仅在处理不同的类型（type）,则可能引发“假阳性”告警。这种情况可在代码中使用相应注解消除。
@@ -208,7 +209,18 @@ PMD同样是一款静态代码分析工具。特别的是，PMD内还包含一�
  ODL应用Build过程已默认开启了CPD工具，build过程在target/site/中生成cpd.html报告。Maven的输出日志中也可以查看到相应的报告信息。
  
 要了解更多关于error-prone的消息可以查看：
-- [pmd](https://pmd.github.io/)
+- [PMD](https://pmd.github.io/)
+
+## Alibaba-P3C (Optional)
+阿里巴巴集团提供的工具，基于PMD及相应IDE实现[阿里巴巴Java开发手册](https://github.com/alibaba/p3c/blob/master/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C%EF%BC%88%E8%AF%A6%E5%B0%BD%E7%89%88%EF%BC%89.pdf)中部分规则（目前为53条）检测。
+
+工具包含中文提示，对于中文语言使用者相对友好。
+
+安装对应的[Eclipse插件](https://github.com/alibaba/p3c/tree/master/eclipse-plugin)即可使用，安装方式十分方便。具体使用方式详见[教程](https://github.com/alibaba/p3c/blob/master/eclipse-plugin/README_cn.md)。
+
+要了解更多关于P3C的消息可以查看：    
+
+- [P3C](https://github.com/alibaba/p3c)
 
 ## 总结
 任何一款静态代码分析工具都可能出现“假阳性”的警告。如下代码所示，checkstyle提示缺少default case：
