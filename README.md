@@ -15,7 +15,7 @@
     * [FindBugs](#findbugs)
     * [Error-Prone](#error-prone)  
     * [PMD-CPD（Copy/Paste Detection）](#pmd-cpdcopypaste-detection)
-    * [Alibaba-P3C](#alibaba-p3c)
+    * [Alibaba-P3C](#alibaba-p3c-optional)
     * [总结](#总结)        
 * [命名风格补充](#命名风格补充)
     * [Maven artifact names](#maven-artifact-names)
@@ -200,13 +200,17 @@ ODL的infrautils项目提供了一个已配置好error-prone的parent pom（org.
 - [Error-Prone](http://errorprone.info/)
 
 ## PMD-CPD（Copy/Paste Detection）
-PMD同样是一款静态代码分析工具。特别的是，PMD内还包含一款CPD工具，CPD帮助检测重复代码。需要注意的是，代码重复检测基于文本分析，若代码之间仅涉及微小的差异，如差异仅在处理不同的类型（type）,则可能引发“假阳性”告警。这种情况可在代码中使用相应注解消除。
+PMD同样是一款静态代码分析工具。ODL项目在Build过程中默认使用了PMD包含的一款CPD工具，帮助检测重复代码。
+
+ build过程在target/site/中生成cpd.html报告。Maven的输出日志中也可以查看到相应的报告信息。
+ 
+需要注意的是，代码重复检测基于文本分析，若代码之间仅涉及微小的差异，如差异仅在处理不同的类型（type）,则可能引发“假阳性”告警。这种情况可在代码中使用相应注解消除。
 ```
   @SuppressWarnings("CPD-START") 
   ...
   @SuppressWarnings("CPD-END")
 ```
- ODL应用Build过程已默认开启了CPD工具，build过程在target/site/中生成cpd.html报告。Maven的输出日志中也可以查看到相应的报告信息。
+
  
 要了解更多关于error-prone的消息可以查看：
 - [PMD](https://pmd.github.io/)
