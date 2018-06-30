@@ -53,7 +53,7 @@ ODL代码将[Google Java Style Guide](http://google.github.io/styleguide/javagui
 ![](images/image001.jpg)
 
 ## Formatter
-Eclipse提供快速格式化功能，并支持格式profile的灵活配置。为使格式化满足ODL的要求Code Style，应根据下图导入UT提供的profile文件。
+Eclipse提供快速格式化功能，并支持格式profile的灵活配置。为使格式化满足ODL的要求Code Style，应根据下图导入提供的[eclipse-java-google-style](https://github.com/zhanghuafei/UT-ODL-Coding-Tutorial/blob/master/formatter-profile/eclipse-java-google-style.xml)(基于eclipse-java-google-style做了部分更改)。
 
 ![](images/image002.png)
 
