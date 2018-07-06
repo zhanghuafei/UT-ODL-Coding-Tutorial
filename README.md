@@ -80,6 +80,9 @@ Help-> Install New Software
 进入菜单Windows -> Preferences -> Check Style
 ![](images/image004.png)
 
+图中两个变量分别为：
+- checkstyle.header.file
+- checkstyle.suppressions.file
 ### Step 3- Activate checkstyle
 ![](images/image005.jpg)
 
@@ -102,7 +105,7 @@ Help-> Install New Software
 ![](images/image007.png)
 
 ## Organize Imports
-去掉Eclipse所有预置的import order。
+要求import order为字母序，所以应去掉Eclipse所有预置的import order。
 
 ![](images/image008.jpg)
 
