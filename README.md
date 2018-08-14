@@ -112,7 +112,6 @@ Help-> Install New Software
 ```
 /**
  * 
- * @author XXXX
  * @date ${date}
  */
 ```
