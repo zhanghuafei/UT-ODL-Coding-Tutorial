@@ -6,6 +6,7 @@
     * [(三) Formatter](#formatter)
     * [(四) CheckStyle](#checkstyle)
     * [(五) 添加版权声明](#添加版权声明)
+    * [(六) 添加作者注解](#)
     * [(六) Organize Imports](#organize-imports)
     * [(七) Save Actions (Optional)](#save-actions-optional)
     * [(八) 代码自动提示功能](#代码自动提示功能)
@@ -104,6 +105,17 @@ Help-> Install New Software
 
 ![](images/image007.png)
 
+## 添加作者注解
+每个类应添加相应作者信息方便其他开发人员了解。
+
+
+```
+/**
+ * 
+ * @author XXXX
+ * @date ${date}
+ */
+```
 ## Organize Imports
 要求import order为字母序，所以应去掉Eclipse所有预置的import order。
 
