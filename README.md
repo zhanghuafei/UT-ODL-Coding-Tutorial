@@ -6,7 +6,7 @@
     * [(三) Formatter](#formatter)
     * [(四) CheckStyle](#checkstyle)
     * [(五) 添加版权声明](#添加版权声明)
-    * [(六) 添加作者注解](#)
+    * [(六) 添加作者注解](#添加作者注解)
     * [(六) Organize Imports](#organize-imports)
     * [(七) Save Actions (Optional)](#save-actions-optional)
     * [(八) 代码自动提示功能](#代码自动提示功能)
