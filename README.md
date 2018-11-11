@@ -112,7 +112,7 @@ Help-> Install New Software
 ```
 /**
  * 
- * @date ${date}
+ * @author 
  */
 ```
 ## Organize Imports
