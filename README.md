@@ -283,7 +283,8 @@ Yang内元素的命名包含两种风格：
 ![](images/image016.jpg)
 
 
-# Git开发协作流程(By WuJun)
+# Git开发协作流程
+               -(By WuJun)
 
 ## 流程图
 
