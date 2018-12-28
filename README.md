@@ -27,7 +27,7 @@
 * Jenkins（待补充）
 * 日志（待补充）
 * 错误报告（待补充）
-* 开发协作工作流（待补充）
+* [Git开发协作流程]（#Git开发协作流程）
 
 
 
@@ -283,7 +283,7 @@ Yang内元素的命名包含两种风格：
 ![](images/image016.jpg)
 
 
-# Git开发协作流程
+# Git开发协作流程(By WuJun)
 
 ## 流程图
 
@@ -366,7 +366,7 @@ $ git push --force origin myfeature
 
 提交到远程仓库以后，就可以发出 Merge Request 到 master 分支，然后请求 Owner 进行代码 Review，确认可以合并到 master。
 
-# 参考
+### 参考
 
 http://www.ruanyifeng.com/blog/2015/08/git-use-process.html
 
